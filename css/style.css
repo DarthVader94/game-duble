@@ -1,0 +1,79 @@
+body {
+   font-family: 'Courier New', Courier, monospace;
+   background-color: rgba(102, 104, 223, 0.61);
+}
+
+* {
+   box-sizing: border-box;
+}
+
+a {
+   color: inherit;
+   text-decoration: none;
+}
+
+img {
+   max-width: 100%;
+}
+
+.game-wrapp {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 20px;
+   padding: 40px 15px;
+   margin: 0 auto;
+   max-width: 1000px;
+}
+
+.card {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 240px;
+   cursor: pointer;
+   padding: 30px;
+   background-color: rgba(125, 25, 219, 0.781);
+   font-size: 0;
+   color: transparent;
+   border-radius: 10px;
+   transition: background-color 0.3s;
+}
+
+.card:hover {
+   background-color: rgba(175, 108, 238, 0.781);
+}
+
+.card:active {
+   color: wheat;
+   background-color: rgba(69, 11, 124, 0.781);
+}
+
+.open {
+   background-color: rgba(136, 32, 32, 0.781);
+   font-size: 36px;
+   color: wheat;
+   cursor: default;
+}
+
+.open:hover {
+   background-color: rgb(182, 47, 81);
+}
+
+.open:active {
+   background-color: rgb(182, 47, 81);
+}
+
+.success {
+   background-color: rgb(47, 182, 137);
+   font-size: 36px;
+   color: wheat;
+   cursor: default;
+}
+
+.success:hover {
+   background-color: rgb(47, 182, 137);
+}
+
+.success:active {
+   background-color: rgb(47, 182, 137);
+}
